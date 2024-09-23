@@ -30,7 +30,7 @@ export default function RootPage() {
         </p>
         <p>
           大一到大二這段時間中，我透過系上的課程學習到資工相關的基礎知識，並且參加了各項大小團隊，如新生知訊網、
-          創遊社、服務學習助教，透過這些活動，我不僅加強了個人的程式能力，也學習到了如何與人合作。在這過程中，
+          創遊社、服務學習課程負責人，透過這些活動，我不僅加強了個人的程式能力，也學習到了如何與人合作。在這過程中，
           不論課內外專案，都接觸到了各種不同的語言與技術，而我發現，儘管使用的技術在變，其核心價值——軟體工程——
           確是不變的。若要將技術落地，勢必無法離開軟體工程的範疇，也因此我開始對軟體工程有著濃厚的興趣。
         </p>
@@ -61,9 +61,214 @@ export default function RootPage() {
         </p>
       </section>
 
-      <h3>得獎紀錄</h3>
-      <h3>工作經歷</h3>
-      <h3>領導經歷</h3>
+      <section>
+        <h3>獲獎與測驗紀錄</h3>
+
+        <p className="flex flex-row justify-between">
+          <span><b>第一名．</b>中山醫學大學 全國大專院校 創新、創意及創業競賽</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <span className="text-sm text-gray-600">Dec 2023</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>第二名．</b>梅竹黑客松 黑客組 LINE</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/python.png"
+              alt="python" title="python"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/flutter.png"
+              alt="Flutter" title="Flutter"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Oct 2023</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>專業級 (4/7)．</b>Collegiate Programming Examination (CPE)</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/c-plus-plus.png"
+              alt="C++" title="C++"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Mar 2023</span>
+          </span>
+        </p>
+        <p>Description</p>
+      </section>
+
+      <section>
+        <h3>工作經歷</h3>
+
+        <p className="flex flex-row justify-between">
+          <span><b>CIO．</b>AIlicorn 艾里空股份有限公司</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/linux.png"
+              alt="Linux" title="Linux"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/docker.png"
+              alt="Docker" title="Docker"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/python.png"
+              alt="Python" title="Python"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/flutter.png"
+              alt="Flutter" title="Flutter"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Jan 2024 - Present</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>TechFRESH 實習生．</b>LINE (Client Team)</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/flutter.png"
+              alt="Flutter" title="Flutter"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/kotlin.png"
+              alt="Kotlin" title="Kotlin"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Jul 2024 - Jun 2025 (Expected)</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>開發者．</b>中央大學衛生保健組網頁開發</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/nextjs.png"
+              alt="Next.js" title="Next.js"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/docker.png"
+              alt="Docker" title="Docker"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Apr 2024 - Sep 2024</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>開發者．</b>國防部後備查詢系統專案</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/flutter.png"
+              alt="Flutter" title="Flutter"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Oct 2023 - Jan 2024</span>
+          </span>
+        </p>
+        <p>Description</p>
+      </section>
+
+      <section>
+        <h3>領導經歷</h3>
+
+        <p className="flex flex-row justify-between">
+          <span><b>專案負責人．</b>CSTP 中央資訊教育平台</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/flutter.png"
+              alt="Flutter" title="Flutter"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/firebase.png"
+              alt="Firebase" title="Firebase"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Sep 2023 - Present</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>課程負責人．</b>112 學年度服務學習、資訊與社會服務</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <span className="text-sm text-gray-600">Sep 2023 - Jan 2024</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>組長．</b>2023 中央大學新生知訊網</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/flutter.png"
+              alt="Flutter" title="Flutter"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/vue.png"
+              alt="Vue.js" title="Vue.js"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Jan 2023 - Aug 2023</span>
+          </span>
+        </p>
+        <p>Description</p>
+
+        <p className="flex flex-row justify-between">
+          <span><b>秘書長．</b>ideaNCU 創意社群 中央創遊</span>
+          <span className="flex flex-row items-center gap-1.5">
+            <Image
+              className="w-4 h-4"
+              src="/icons/unity.png"
+              alt="Unity" title="Unity"
+              width={16} height={16}
+            />
+            <Image
+              className="w-4 h-4"
+              src="/icons/c-sharp.png"
+              alt="C#" title="C#"
+              width={16} height={16}
+            />
+            <span className="text-sm text-gray-600">Feb 2023 - Jun 2023</span>
+          </span>
+        </p>
+        <p>Description</p>
+      </section>
+
       <h3>讀書計畫與研究計畫</h3>
 
       <h2 className="mt-10">附. 經歷審查證明</h2>
