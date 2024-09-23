@@ -52,7 +52,7 @@ export default function RootPage() {
           <b>Keep Learning, Keep Progressing</b>
         </p>
         <p>
-          在資工系四年，我以一句話總結自己最深刻的體會 "Keep learning, keep progressing."
+          在資工系四年，我以一句話總結自己最深刻的體會 &ldquo;Keep learning, keep progressing.&rdquo;
         </p>
         <p>
           資工相較於其他領域很不一樣，從大一到現在，每年都有很不一樣的科技浪潮，元宇宙、區塊鏈、人工智慧......，
