@@ -4,12 +4,15 @@
 
 h2 {
   @apply text-4xl font-bold
+    h-screen content-center
     print:break-before-page print:break-after-page
-    print:h-screen print:content-center;
+    print:h-screen;
 }
 
 h3 {
-  @apply text-2xl font-semibold border-b-2 pb-1 mb-3 mt-6;
+  @apply text-2xl font-semibold
+    max-lg:text-xl
+    border-b-2 pb-1 mb-3 mt-6;
 }
 
 ul {

@@ -64,15 +64,15 @@ export default function RootPage() {
       <section>
         <h3>獲獎與測驗紀錄</h3>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>第一名．</b>中山醫學大學 全國大專院校 創新、創意及創業競賽</span>
           <span className="flex flex-row items-center gap-1.5">
-            <span className="text-sm text-gray-600">Dec 2023</span>
+            <span className="text-sm text-gray-600 text-nowrap">Dec 2023</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>第二名．</b>梅竹黑客松 黑客組 LINE</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -87,12 +87,12 @@ export default function RootPage() {
               alt="Flutter" title="Flutter"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Oct 2023</span>
+            <span className="text-sm text-gray-600 text-nowrap">Oct 2023</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>專業級 (4/7)．</b>Collegiate Programming Examination (CPE)</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -101,7 +101,7 @@ export default function RootPage() {
               alt="C++" title="C++"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Mar 2023</span>
+            <span className="text-sm text-gray-600 text-nowrap">Mar 2023</span>
           </span>
         </p>
         <p>Description</p>
@@ -110,7 +110,7 @@ export default function RootPage() {
       <section>
         <h3>工作經歷</h3>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>CIO．</b>AIlicorn 艾里空股份有限公司</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -137,12 +137,12 @@ export default function RootPage() {
               alt="Flutter" title="Flutter"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Jan 2024 - Present</span>
+            <span className="text-sm text-gray-600 text-nowrap">Jan 2024 - Present</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>TechFRESH 實習生．</b>LINE (Client Team)</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -157,12 +157,12 @@ export default function RootPage() {
               alt="Kotlin" title="Kotlin"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Jul 2024 - Jun 2025 (Expected)</span>
+            <span className="text-sm text-gray-600 text-nowrap">Jul 2024 - Jun 2025 (Expected)</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>開發者．</b>中央大學衛生保健組網頁開發</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -177,12 +177,12 @@ export default function RootPage() {
               alt="Docker" title="Docker"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Apr 2024 - Sep 2024</span>
+            <span className="text-sm text-gray-600 text-nowrap">Apr 2024 - Sep 2024</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>開發者．</b>國防部後備查詢系統專案</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -191,7 +191,7 @@ export default function RootPage() {
               alt="Flutter" title="Flutter"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Oct 2023 - Jan 2024</span>
+            <span className="text-sm text-gray-600 text-nowrap">Oct 2023 - Jan 2024</span>
           </span>
         </p>
         <p>Description</p>
@@ -200,7 +200,7 @@ export default function RootPage() {
       <section>
         <h3>領導經歷</h3>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>專案負責人．</b>CSTP 中央資訊教育平台</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -215,20 +215,20 @@ export default function RootPage() {
               alt="Firebase" title="Firebase"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Sep 2023 - Present</span>
+            <span className="text-sm text-gray-600 text-nowrap">Sep 2023 - Present</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>課程負責人．</b>112 學年度服務學習、資訊與社會服務</span>
           <span className="flex flex-row items-center gap-1.5">
-            <span className="text-sm text-gray-600">Sep 2023 - Jan 2024</span>
+            <span className="text-sm text-gray-600 text-nowrap">Sep 2023 - Jan 2024</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>組長．</b>2023 中央大學新生知訊網</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -243,12 +243,12 @@ export default function RootPage() {
               alt="Vue.js" title="Vue.js"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Jan 2023 - Aug 2023</span>
+            <span className="text-sm text-gray-600 text-nowrap">Jan 2023 - Aug 2023</span>
           </span>
         </p>
         <p>Description</p>
 
-        <p className="flex flex-row justify-between">
+        <p className="flex flex-row max-sm:flex-col justify-between">
           <span><b>秘書長．</b>ideaNCU 創意社群 中央創遊</span>
           <span className="flex flex-row items-center gap-1.5">
             <Image
@@ -263,7 +263,7 @@ export default function RootPage() {
               alt="C#" title="C#"
               width={16} height={16}
             />
-            <span className="text-sm text-gray-600">Feb 2023 - Jun 2023</span>
+            <span className="text-sm text-gray-600 text-nowrap">Feb 2023 - Jun 2023</span>
           </span>
         </p>
         <p>Description</p>
