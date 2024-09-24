@@ -22,3 +22,7 @@ ul {
 p {
   @apply mb-3;
 }
+
+a {
+  @apply underline;
+}

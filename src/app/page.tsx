@@ -1,6 +1,7 @@
 import ExperienceParagraph from "@/components/experience-paragraph";
 import Icons from "@/module/asset/presenter/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function RootPage() {
   return (
@@ -81,9 +82,9 @@ export default function RootPage() {
           icons={[Icons.python, Icons.flutter]}
         >
           <p>
-            <>我們是一個 5 人團隊，開發了一款名為 NCU Student Helper 的 LINE Bot 服務，它串接了中央大學的</>
-            <>課務系統 eeclass 以及大眾運輸工具，亦透過向量資料庫整理校園行政、系所、周邊資訊，最後使用 LangChain </>
-            <>大語言模型工具，提供使用者以自然語言方便地進行校園生活各種操作。</>
+            <Link href="https://github.com/quan0715/NCU_Student_Helper">NCU Student Helper</Link>
+            <> 是我們開發的 LINE Bot 服務，它串接了中央大學的課務系統 eeclass 以及大眾運輸工具，亦透過向量資料庫整理中央的</>
+            <>行政、系所、周邊資訊，最後使用 LangChain 大語言模型工具，提供使用者以自然語言方便地進行校園生活各種操作。</>
           </p>
         </ExperienceParagraph>
 
@@ -106,16 +107,24 @@ export default function RootPage() {
           dateString="Jan 2024 - Present"
           icons={[Icons.linux, Icons.docker, Icons.python, Icons.flutter]}
         >
-          <p>Description</p>
+          <p>
+            <>身為一家專注於開發非接觸式 AIoT 裝置的新創公司的資訊長，我負責公司的基礎設施、後端 API、前端應用程式、</>
+            <>邊緣裝置部屬以及各項技術的串接與整合。目前已與數家長照機構簽署 MOU 正在進行 PoC，亦正在與桃園市合作進行</>
+            <>的智慧公廁一案。</>
+          </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
           title="TechFRESH 實習生"
-          subtitle="LINE (Client Team)"
+          subtitle="LINE (Android Team / Shopping App)"
           dateString="Jul 2024 - Jun 2025 (Expected)"
           icons={[Icons.flutter, Icons.kotlin]}
         >
-          <p>Description</p>
+          <p>
+            <>為 Android Team 唯一錄取的 2024 夏季實習生，正參與 LINE 購物 App 的專案開發。專案以 Clean Architecture </>
+            <>乾淨架構為基礎，並引入 ATDD 驗收測試驅動開發等較為新興的開發方法。而我在專案中開發了多項 Native My Account Page </>
+            <>的功能，將改善應用程式該分頁的效能，提升使用者流暢度。</>
+          </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
@@ -124,7 +133,14 @@ export default function RootPage() {
           dateString="Apr 2024 - Sep 2024"
           icons={[Icons.nextJs, Icons.docker]}
         >
-          <p>Description</p>
+          <p>
+            <>為兩人共同開發的</>
+            <Link href="https://github.com/an920107/health-care-website">專案</Link>
+            <>，協助處室開發一套新的且帶有完整後台功能的</>
+            <Link href="https://health.ncu.edu.tw/">網站</Link>
+            <>。其中，我負責伺服器硬體組裝、Spec 文件撰寫、UI 設計，以 Next.js 套用 Clean Architecture 開發前端，並善用 </>
+            <>Docker 與 GitHub Workflow 進行自動化集成與部屬，提高開發與測試效率，使的我們能在半年內從零完成網站的開發與建置。</>
+          </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
@@ -133,7 +149,7 @@ export default function RootPage() {
           dateString="Oct 2023 - Jan 2024"
           icons={[Icons.flutter]}
         >
-          <p>Description</p>
+          <p>兩人與國防部合作開發後備資源查詢 APP 的 MVP，我負責前端並使用 Flutter 進行開發。</p>
         </ExperienceParagraph>
       </section>
 
