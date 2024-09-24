@@ -1,3 +1,5 @@
+import ExperienceParagraph from "@/components/experience-paragraph";
+import Icons from "@/module/asset/presenter/icons";
 import Image from "next/image";
 
 export default function RootPage() {
@@ -64,209 +66,110 @@ export default function RootPage() {
       <section>
         <h3>獲獎與測驗紀錄</h3>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>第一名．</b>中山醫學大學 全國大專院校 創新、創意及創業競賽</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <span className="text-sm text-gray-600 text-nowrap">Dec 2023</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="第一名"
+          subtitle="中山醫學大學 全國大專院校 創新、創意及創業競賽"
+          dateString="Dec 2023"
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>第二名．</b>梅竹黑客松 黑客組 LINE</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/python.png"
-              alt="python" title="python"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/flutter.png"
-              alt="Flutter" title="Flutter"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Oct 2023</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="第二名"
+          subtitle="梅竹黑客松 黑客組 LINE"
+          dateString="Oct 2023"
+          icons={[Icons.python, Icons.flutter]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>專業級 (4/7)．</b>Collegiate Programming Examination (CPE)</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/c-plus-plus.png"
-              alt="C++" title="C++"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Mar 2023</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="專業級 (4/7)"
+          subtitle="Collegiate Programming Examination (CPE)"
+          dateString="Mar 2023"
+          icons={[Icons.cpp]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
       </section>
 
       <section>
         <h3>工作經歷</h3>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>CIO．</b>AIlicorn 艾里空股份有限公司</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/linux.png"
-              alt="Linux" title="Linux"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/docker.png"
-              alt="Docker" title="Docker"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/python.png"
-              alt="Python" title="Python"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/flutter.png"
-              alt="Flutter" title="Flutter"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Jan 2024 - Present</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="CIO"
+          subtitle="AIlicorn 艾里空股份有限公司"
+          dateString="Jan 2024 - Present"
+          icons={[Icons.linux, Icons.docker, Icons.python, Icons.flutter]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>TechFRESH 實習生．</b>LINE (Client Team)</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/flutter.png"
-              alt="Flutter" title="Flutter"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/kotlin.png"
-              alt="Kotlin" title="Kotlin"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Jul 2024 - Jun 2025 (Expected)</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="TechFRESH 實習生"
+          subtitle="LINE (Client Team)"
+          dateString="Jul 2024 - Jun 2025 (Expected)"
+          icons={[Icons.flutter, Icons.kotlin]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>開發者．</b>中央大學衛生保健組網頁開發</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/nextjs.png"
-              alt="Next.js" title="Next.js"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/docker.png"
-              alt="Docker" title="Docker"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Apr 2024 - Sep 2024</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="開發者"
+          subtitle="中央大學衛生保健組網頁開發"
+          dateString="Apr 2024 - Sep 2024"
+          icons={[Icons.nextJs, Icons.docker]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>開發者．</b>國防部後備查詢系統專案</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/flutter.png"
-              alt="Flutter" title="Flutter"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Oct 2023 - Jan 2024</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="開發者"
+          subtitle="國防部後備查詢系統專案"
+          dateString="Oct 2023 - Jan 2024"
+          icons={[Icons.flutter]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
       </section>
 
       <section>
         <h3>領導經歷</h3>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>專案負責人．</b>CSTP 中央資訊教育平台</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/flutter.png"
-              alt="Flutter" title="Flutter"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/firebase.png"
-              alt="Firebase" title="Firebase"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Sep 2023 - Present</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="專案負責人"
+          subtitle="CSTP 中央資訊教育平台"
+          dateString="Sep 2023 - Present"
+          icons={[Icons.flutter, Icons.firebase]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>課程負責人．</b>112 學年度服務學習、資訊與社會服務</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <span className="text-sm text-gray-600 text-nowrap">Sep 2023 - Jan 2024</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="課程負責人"
+          subtitle="112 學年度服務學習、資訊與社會服務"
+          dateString="Sep 2023 - Jan 2024"
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>組長．</b>2023 中央大學新生知訊網</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/flutter.png"
-              alt="Flutter" title="Flutter"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/vue.png"
-              alt="Vue.js" title="Vue.js"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Jan 2023 - Aug 2023</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="組長"
+          subtitle="2023 中央大學新生知訊網"
+          dateString="Jan 2023 - Aug 2023"
+          icons={[Icons.flutter, Icons.vueJs]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
 
-        <p className="flex flex-row max-sm:flex-col justify-between">
-          <span><b>秘書長．</b>ideaNCU 創意社群 中央創遊</span>
-          <span className="flex flex-row items-center gap-1.5">
-            <Image
-              className="w-4 h-4"
-              src="/icons/unity.png"
-              alt="Unity" title="Unity"
-              width={16} height={16}
-            />
-            <Image
-              className="w-4 h-4"
-              src="/icons/c-sharp.png"
-              alt="C#" title="C#"
-              width={16} height={16}
-            />
-            <span className="text-sm text-gray-600 text-nowrap">Feb 2023 - Jun 2023</span>
-          </span>
-        </p>
-        <p>Description</p>
+        <ExperienceParagraph
+          title="秘書長"
+          subtitle="ideaNCU 創意社群 中央創遊"
+          dateString="Feb 2023 - Jun 2023"
+          icons={[Icons.unity, Icons.cs]}
+        >
+          <p>Description</p>
+        </ExperienceParagraph>
       </section>
 
       <h3>讀書計畫與研究計畫</h3>
