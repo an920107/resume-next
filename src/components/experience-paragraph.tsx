@@ -20,7 +20,7 @@ export default function ExperienceParagraph({
   return (
     <>
       <p className="flex flex-row max-sm:flex-col justify-between">
-        <span><b>{title}．</b>{subtitle}</span>
+        <span className="text-black"><b>{title}．</b>{subtitle}</span>
         <span className="flex flex-row items-center gap-1.5">
           {
             icons.map((icon) => (
@@ -32,7 +32,7 @@ export default function ExperienceParagraph({
               />
             ))
           }
-          <span className="text-sm text-gray-600 text-nowrap">{dateString}</span>
+          <span className="text-sm text-nowrap">{dateString}</span>
         </span>
       </p>
       {children}

@@ -20,9 +20,10 @@ ul {
 }
 
 p {
-  @apply mb-3;
+  @apply mb-3 text-gray-600;
 }
 
 a {
-  @apply underline;
+  @apply underline hover:no-underline
+    hover:ring-1 hover:ring-gray-600 hover:rounded-md;
 }

@@ -9,11 +9,6 @@ export default function RootPage() {
       <h2>A. 專題研究報告</h2>
 
       <h3>專題：會議軟體擴充功能之設計與實作</h3>
-      <h3>校務系統開發：衛生保健組網頁</h3>
-      <h3>黑客松競賽：NCU Helper</h3>
-      <h3>政府計畫：後備查詢系統</h3>
-      <h3>服務學習：CSTP 中央資訊教育平台</h3>
-      <h3>LINE 專案參與：LINE 購物 App</h3>
 
       <h2 className="mt-10">C. 研究計畫及自傳相關</h2>
 
@@ -23,6 +18,8 @@ export default function RootPage() {
           <li>學歷：國立中央大學資訊工程學系 <i>（預計畢業：2025/06）</i></li>
           <li>專業領域：軟體工程實務、設計模式、專案管理、UI/UX 設計</li>
           <li>擅長語言與框架：Flutter、Next.js、FastAPI、C/C++</li>
+          <li>實習或工作經驗：LINE、AIlicorn <i>（創業成員）</i>、中大衛保組網頁開發</li>
+          <li>領導經驗：</li>
         </ul>
       </section>
 
@@ -30,11 +27,26 @@ export default function RootPage() {
         <h3>獲獎與測驗紀錄</h3>
 
         <ExperienceParagraph
+          title="入圍 14 強"
+          subtitle="fiti 創新創業激勵計畫"
+          dateString="Sep 2024"
+        >
+          <p>
+            <>我改善了我們新創公司中，資料蒐集的流程，並為其設計自動化機制，使 AI 模型訓練的效率提升，更新頻率提升超過 50%，</>
+            <>使得競賽時能有好的 Demo 效果，進而獲得評選入圍的殊榮。</>
+
+          </p>
+        </ExperienceParagraph>
+
+        <ExperienceParagraph
           title="第一名"
           subtitle="中山醫學大學 全國大專院校 創新、創意及創業競賽"
           dateString="Dec 2023"
         >
-          <p>為我們新創公司 AIlicorn 獲得的獎項，使得我們成功進駐中山醫學大學的創業加速器。</p>
+          <p>
+            <>為我們新創公司 AIlicorn 獲得的獎項，使得我們成功進駐中山醫學大學的創業加速器。我在競賽中準備了產品具體的解決方法，</>
+            <>並開發出 MVP，讓產品規劃具有說服力。</>
+          </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
@@ -70,8 +82,8 @@ export default function RootPage() {
           icons={[Icons.linux, Icons.docker, Icons.python, Icons.flutter]}
         >
           <p>
-            <>身為一家專注於開發非接觸式 AIoT 裝置的新創公司的資訊長，我負責公司的基礎設施、後端 API、前端應用程式、</>
-            <>邊緣裝置部屬以及各項技術的串接與整合。目前已與數家長照機構簽署 MOU 正在進行 PoC，亦正在與桃園市合作進行</>
+            <>艾里空是我與朋友創立的公司，專注於開發非接觸式 AIoT 裝置，而我身為公司的資訊長，負責公司的基礎設施、後端 API、前端</>
+            <>應用程式、邊緣裝置部屬以及各項技術的串接與整合。目前已與數家長照機構簽署 MOU 正在進行 PoC，亦正在與桃園市合作進行</>
             <>的智慧公廁一案。</>
           </p>
         </ExperienceParagraph>
@@ -83,9 +95,9 @@ export default function RootPage() {
           icons={[Icons.flutter, Icons.kotlin]}
         >
           <p>
-            <>我是 Android Team 唯一錄取的 2024 夏季實習生，正參與 LINE 購物 App 的專案開發。專案以 Clean Architecture </>
-            <>乾淨架構為基礎，並引入 ATDD 驗收測試驅動開發等較為新興的開發方法。而我在專案中開發了多項 Native My Account Page </>
-            <>的功能，將改善應用程式該分頁的效能，提升使用者流暢度。</>
+            <>我以實習生的身分參與 LINE 購物 App 的專案開發，為一 DAU 達 10 萬人次的專案。專案使用 Flutter 框架，以 Clean </>
+            <>Architecture 乾淨架構為基礎，並引入 ATDD 驗收測試驅動開發等較為新興的開發方法。而我在專案中開發了多項 Native </>
+            <>My Account Page 的功能，將改善應用程式該分頁的效能，提升使用者流暢度。</>
           </p>
         </ExperienceParagraph>
 
@@ -111,7 +123,7 @@ export default function RootPage() {
           dateString="Oct 2023 - Jan 2024"
           icons={[Icons.flutter]}
         >
-          <p>兩人與國防部合作開發後備資源查詢 APP 的 MVP，我負責前端並使用 Flutter 進行開發。</p>
+          <p>兩人與國防部合作開發後備資源查詢 APP 的 MVP，我負責前端並使用 Flutter 進行開發，改善原本不流暢的作業流程。</p>
         </ExperienceParagraph>
       </section>
 
@@ -126,25 +138,35 @@ export default function RootPage() {
         >
           <p>
             <>我成立一個 6 人團隊，領導大家開發一個開放式線上課程平台。身為 PM 的角色，我設計了開發規範，並將其整理成文件；</>
-            <>在開會前將抽象的大功能，拆分成具體的實作票；在團隊成員遇到技術問題時，給予協助。</>
+            <>在開會前將抽象的大功能，拆分成具體的實作票；在團隊成員遇到技術問題時，給予協助。技術方面，我們使用 Flutter 開發前端，</>
+            <>串接 Firebase 作為 NoSQL 資料庫。</>
           </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
           title="課程負責人"
-          subtitle="112 學年度服務學習、資訊與社會服務"
-          dateString="Sep 2023 - Jan 2024"
+          subtitle="校必修 服務學習、系選修 資訊與社會服務"
+          dateString="Sep 2022 - Jan 2024"
         >
-          <p>Description</p>
+          <p>
+            <>課程培訓資工系同學，強調費曼學習、換位思考，辦理共計 14 場針對國小至高中的程式教育營隊、3 套線上課程影片，並經營網路</>
+            <>社群媒體以及策劃開放式課程平台。</>
+          </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
           title="組長"
           subtitle="2023 中央大學新生知訊網"
           dateString="Jan 2023 - Aug 2023"
-          icons={[Icons.flutter, Icons.vueJs]}
+          icons={[Icons.flutter, Icons.vueJs, Icons.python]}
         >
-          <p>Description</p>
+          <p>
+            <Link href="https://23.ncufresh.ncu.edu.tw">新生知訊網</Link>
+            <>以 Vue.js 為前端框架，彙整校園各個重要時程與資訊，提供給新生使其能快速適應校園生活。我在團隊中擔任影音組長，</>
+            <>透過撰寫 Python 自動化字幕工具，使團隊工作效率提升。另外我也兼任</>
+            <Link href="https://23.ncufresh.ncu.edu.tw/game">小遊戲</Link>
+            <>開發者，以 Flutter 的 Flame 引擎開發網頁小遊戲。</>
+          </p>
         </ExperienceParagraph>
 
         <ExperienceParagraph
@@ -153,14 +175,39 @@ export default function RootPage() {
           dateString="Feb 2023 - Jun 2023"
           icons={[Icons.unity, Icons.cs]}
         >
-          <p>Description</p>
+          <p>
+            <>我在創遊社擔任秘書長，負責社團內部的行政事務，並且協助社團的活動舉辦。就任期間，曾代表中央大學赴日參訪鹿兒島大學，</>
+            <>將過程的見聞以 Unity 開發成遊戲 3D 遊戲 </>
+            <Link href="https://github.com/an920107/kagoshima-monopoly">Kagoshima Monopoly</Link>
+            <>，成果被刊登於教學發展中心之</>
+            <Link href="https://drive.google.com/file/d/1PSGtWNQGOGbMDn-74UwDhuQbT3wNzfoT/view?usp=sharing">刊物</Link>
+            <>。</>
+          </p>
         </ExperienceParagraph>
+      </section>
+
+      <section>
+        <h3>其他專案</h3>
+
+        <ExperienceParagraph
+          title="獨立開發者"
+          subtitle="Minecraft Server Installer"
+          dateString="Apr 2020"
+          icons={[Icons.cs]}
+        >
+          <p>
+            <>我以 C# 撰寫遊戲 Minecraft 的伺服器安裝器，發佈至 </>
+            <Link href="https://www.youtube.com/watch?v=yNis5vcueQY">YouTube</Link>
+            <> 獲得了 34 萬次觀看，以及一千多則留言。</>
+          </p>
+        </ExperienceParagraph>
+
       </section>
 
       <section>
         <h3>自傳</h3>
         <p>
-          <b>對於軟體工程的嚮往</b>
+          <b className="text-black">對於軟體工程的嚮往</b>
         </p>
         <p>
           <>大一到大二這段時間中，我透過系上的課程學習到資工相關的基礎知識，並且參加了各項大小團隊，如新生知訊網、</>
@@ -175,7 +222,7 @@ export default function RootPage() {
           <>進行為期一年的實習，經歷到完整的 Scrum 流程，並對於單元測試、設計模式的實踐有了更深的了解。</>
         </p>
         <p>
-          <b>想法創新，付諸實踐</b>
+          <b className="text-black">想法創新，付諸實踐</b>
         </p>
         <p>
           <>經過這段時間的學習、各式各樣的專案，我希望能夠將自己所學的知識與經驗，付諸實踐，創造出更多有價值的產品。</>
@@ -183,7 +230,7 @@ export default function RootPage() {
           <>我們在過程中有多項獲獎紀錄，亦爭取到許多政府計劃，期望以產學合作的形式，將實驗室的研究成果實際落地。</>
         </p>
         <p>
-          <b>Keep Learning, Keep Progressing</b>
+          <b className="text-black">Keep Learning, Keep Progressing</b>
         </p>
         <p>
           <>在資工系四年，我以一句話總結自己最深刻的體會 &ldquo;Keep learning, keep progressing.&rdquo;</>
