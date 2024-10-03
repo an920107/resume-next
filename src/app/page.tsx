@@ -1,6 +1,7 @@
 import ExperienceParagraph from "@/components/experience-paragraph";
+import FullPageCertificate from "@/components/full-page-certificate";
+import Certificates from "@/module/asset/presenter/certificates";
 import Icons from "@/module/asset/presenter/icons";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function RootPage() {
@@ -201,7 +202,6 @@ export default function RootPage() {
             <> 獲得了 34 萬次觀看，以及一千多則留言。</>
           </p>
         </ExperienceParagraph>
-
       </section>
 
       <section>
@@ -248,15 +248,45 @@ export default function RootPage() {
 
       <h2 className="mt-10">附. 經歷審查證明</h2>
 
-      <section className="print:h-screen">
-        <h3>LINE TechFRESH 在職證明</h3>
-        <Image
-          className="w-full h-auto print:w-auto print:h-full print:object-contain"
-          src="/images/line-certificate.png"
-          alt="LINE Certificate"
-          width={595} height={841}
-        />
-      </section>
+      <FullPageCertificate
+        title="LINE TechFRESH 在職證明"
+        certificate={Certificates.line}
+      />
+
+      <FullPageCertificate
+        title="AIlicorn 在職證明"
+        certificate={Certificates.ailicorn}
+      />
+
+      <FullPageCertificate
+        title="梅竹黑客松 黑客組 LINE 第二名"
+        certificate={Certificates.hackathon}
+      />
+
+      <FullPageCertificate
+        title="中山醫學大學 全國大專院校 創新、創意及創業競賽 第一名"
+        certificate={Certificates.csmu}
+      />
+
+      <FullPageCertificate
+        title="fiti 創新創業激勵計畫 入圍 14 強"
+        certificate={Certificates.fiti}
+      />
+
+      <FullPageCertificate
+        title="2023 中央大學新生知訊網 組長"
+        certificate={Certificates.ncuFresh}
+      />
+
+      <FullPageCertificate
+        title="中央創遊社 秘書組長證明"
+        certificate={Certificates.ncuGame}
+      />
+
+      <FullPageCertificate
+        title="清水高中人工智慧營隊 服務證明"
+        certificate={Certificates.qingShuei}
+      />
     </>
   );
 }

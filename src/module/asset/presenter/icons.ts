@@ -1,6 +1,8 @@
 import AssetEntity from "../domain/assetEntity";
 
-export default abstract class Icons {
+export default class Icons {
+    private constructor() { }
+
     static readonly cpp: AssetEntity = {
         path: "/icons/c-plus-plus.png",
         name: "C++",
