@@ -27,7 +27,7 @@ export default function RootPage() {
           <>例如即時繪圖互動、聊天彈幕、以及各種聊天室指令。其中，我負責設計並開發即時互動的後端伺服器，使用 Python 的 FastAPI </>
           <>框架，透過 socket connection 結合一般 HTTP methods 達到即時通訊與廣播的目的。</>
         </p>
-        <div className="grid grid-cols-2 gap-2 mb-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
           <div className="flex flex-col items-center gap-2">
             <Image
               className="rounded-lg border-2"
