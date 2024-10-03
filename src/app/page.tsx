@@ -1,7 +1,10 @@
 import ExperienceParagraph from "@/components/experience-paragraph";
 import FullPageCertificate from "@/components/full-page-certificate";
+import Mermaid from "@/components/mermaid";
 import Certificates from "@/module/asset/presenter/certificates";
 import Icons from "@/module/asset/presenter/icons";
+import Research from "@/module/asset/presenter/research";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function RootPage() {
@@ -9,7 +12,83 @@ export default function RootPage() {
     <>
       <h2>A. 專題研究報告</h2>
 
-      <h3>專題：會議軟體擴充功能之設計與實作</h3>
+      <section>
+        <h3>專題研究——會議軟體擴充功能之設計與實作</h3>
+        <ul>
+          <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 鄭永斌教授</li>
+          <li><b className="text-black">研究領域：</b>軟體工程與計算理論研究</li>
+        </ul>
+        <p>
+          <b className="text-black">專題簡介</b>
+        </p>
+        <p className="mb-5">
+          <>本專題使用物件導向實驗室所開發的 AR Parasite SDK，其以 TypeScript 與 Electron 為語言及框架，能對 Windows 作業</>
+          <>系統下的任意視窗元件進行自動化操作。我們 4 人團隊以此為 Google Meet 會議軟體進行擴充，新增許多實用且有趣的功能，</>
+          <>例如即時繪圖互動、聊天彈幕、以及各種聊天室指令。其中，我負責設計並開發即時互動的後端伺服器，使用 Python 的 FastAPI </>
+          <>框架，透過 socket connection 結合一般 HTTP methods 達到即時通訊與廣播的目的。</>
+        </p>
+        <div className="grid grid-cols-2 gap-2 mb-3">
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              className="rounded-lg border-2"
+              src={Research.pin.path}
+              alt={Research.pin.name}
+              width={1920} height={1080}
+            />
+            <p>釘選會議室訊息</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              className="rounded-lg border-2"
+              src={Research.timer.path}
+              alt={Research.timer.name}
+              width={1920} height={1080}
+            />
+            <p>倒數計時器</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              className="rounded-lg border-2"
+              src={Research.draw.path}
+              alt={Research.draw.name}
+              width={1920} height={1080}
+            />
+            <p>會議室成員抽籤</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              className="rounded-lg border-2"
+              src={Research.paint.path}
+              alt={Research.paint.name}
+              width={1920} height={1080}
+            />
+            <p>同步繪圖廣播</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-2">
+          <Mermaid
+            className="w-full flex flex-row justify-center p-2 rounded-lg border-2"
+            chart={`
+            sequenceDiagram
+
+            actor User as 使用者
+            participant Parasite as Google Meet Parasite
+            participant Server as API Server
+
+            User->>Parasite: 啟動並輸入使用者名稱
+            Parasite->>Server: 以使用者名稱及 meet id 建立 socket 連線
+            Server->>Parasite: 回傳 JWT 與 connection id
+            Parasite->>User: 連線成功
+            User-)Parasite: 輸入指令或與 UI 互動
+            Parasite-)Server: 以 HTTP POST 傳送預定義 payload
+            Server-)Parasite: 以 socket 廣播 payload
+            Parasite-)User: 更新 UI 或執行指令
+          `}
+          />
+          <p>前後端互動時序圖</p>
+        </div>
+      </section>
 
       <h2 className="mt-10">C. 研究計畫及自傳相關</h2>
 
