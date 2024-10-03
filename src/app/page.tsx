@@ -1,10 +1,10 @@
+import AnnotatedImage from "@/components/annotated-image";
 import ExperienceParagraph from "@/components/experience-paragraph";
 import FullPageCertificate from "@/components/full-page-certificate";
 import Mermaid from "@/components/mermaid";
 import Certificates from "@/module/asset/presenter/certificates";
 import Icons from "@/module/asset/presenter/icons";
 import Research from "@/module/asset/presenter/research";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function RootPage() {
@@ -28,42 +28,22 @@ export default function RootPage() {
           <>框架，透過 socket connection 結合一般 HTTP methods 達到即時通訊與廣播的目的。</>
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
-          <div className="flex flex-col items-center gap-2">
-            <Image
-              className="rounded-lg border-2"
-              src={Research.pin.path}
-              alt={Research.pin.name}
-              width={1920} height={1080}
-            />
-            <p>釘選會議室訊息</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <Image
-              className="rounded-lg border-2"
-              src={Research.timer.path}
-              alt={Research.timer.name}
-              width={1920} height={1080}
-            />
-            <p>倒數計時器</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <Image
-              className="rounded-lg border-2"
-              src={Research.draw.path}
-              alt={Research.draw.name}
-              width={1920} height={1080}
-            />
-            <p>會議室成員抽籤</p>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <Image
-              className="rounded-lg border-2"
-              src={Research.paint.path}
-              alt={Research.paint.name}
-              width={1920} height={1080}
-            />
-            <p>同步繪圖廣播</p>
-          </div>
+          <AnnotatedImage
+            image={Research.pin}
+            annotation="聊天室訊息釘選"
+          />
+          <AnnotatedImage
+            image={Research.timer}
+            annotation="倒數計時器"
+          />
+          <AnnotatedImage
+            image={Research.draw}
+            annotation="會議室成員抽籤"
+          />
+          <AnnotatedImage
+            image={Research.paint}
+            annotation="同步繪圖廣播"
+          />
         </div>
 
         <div className="flex flex-col items-center gap-2">
@@ -87,6 +67,102 @@ export default function RootPage() {
           `}
           />
           <p>前後端互動時序圖</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>軟體測試專題——Blog Builder——無後端 Blog 自動部署服務</h3>
+        <ul>
+          <li><b className="text-black">指導教授：</b>陽明交通大學資訊工程學系 黃世昆教授</li>
+          <li><b className="text-black">課程名稱：</b>軟體測試</li>
+        </ul>
+        <p>
+          <>說明待補</>
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+          <AnnotatedImage
+            image={Research.blogBuilder}
+            annotation="Blog Builder 主控台"
+          />
+          <AnnotatedImage
+            image={Research.blogList}
+            annotation="目標網站文章列表"
+          />
+          <AnnotatedImage
+            image={Research.blogDetail}
+            annotation="專案架構"
+          />
+          <AnnotatedImage
+            image={Research.blogTesting}
+            annotation="使用 cypress 進行 E2E 測試"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h3>計概專題——Hot Trader——加密貨幣跟單視覺化</h3>
+        <ul>
+          <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 施國琛教授</li>
+          <li><b className="text-black">課程名稱：</b>計算機概論</li>
+        </ul>
+        <p>
+          <>說明待補</>
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+          <AnnotatedImage
+            image={Research.hotTraderList}
+            annotation="熱門交易員列表"
+          />
+          <AnnotatedImage
+            image={Research.hotTraderFigure}
+            annotation="視覺化圖表呈現"
+          />
+          <AnnotatedImage
+            image={Research.hotTraderDetail}
+            annotation="專案架構"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h3>計概專題——Remake: Tetris</h3>
+        <ul>
+          <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 施國琛教授</li>
+          <li><b className="text-black">課程名稱：</b>計算機概論</li>
+        </ul>
+        <p>
+          <>說明待補</>
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+          <AnnotatedImage
+            image={Research.tetrisGaming}
+            annotation="遊戲畫面（方塊皆為動態生成）"
+          />
+          <AnnotatedImage
+            image={Research.tetrisLeaderboard}
+            annotation="線上排行榜"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h3>組合語言專題——うらら迷路帖——隨機迷宮終端機遊戲</h3>
+        <ul>
+          <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 梁德容教授、鄭旭詠教授</li>
+          <li><b className="text-black">課程名稱：</b>組合語言</li>
+        </ul>
+        <p>
+          <>說明待補</>
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+          <AnnotatedImage
+            image={Research.asmGaming}
+            annotation="遊戲畫面"
+          />
+          <AnnotatedImage
+            image={Research.asmDetail}
+            annotation="專案架構"
+          />
         </div>
       </section>
 
