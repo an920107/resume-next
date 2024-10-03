@@ -16,11 +16,11 @@ export default function RootPage() {
       <section>
         <h3>簡歷</h3>
         <ul>
-          <li><b>學歷：</b>國立中央大學資訊工程學系 <i>（預計畢業：2025/06）</i></li>
-          <li><b>專業領域：</b>軟體工程實務、設計模式、專案管理、UI/UX 設計</li>
-          <li><b>擅長語言與框架：</b>Flutter、Next.js、FastAPI、C/C++</li>
-          <li><b>實習或工作經驗：</b>LINE、AIlicorn <i>（創業成員）</i>、中央衛保組網頁開發</li>
-          <li><b>領導經驗：</b>課程平台開發團隊 TPM、必/選修課課程負責人、中央新生知訊網組長</li>
+          <li><b className="text-black">學歷：</b>國立中央大學資訊工程學系 <i>（預計畢業：2025/06）</i></li>
+          <li><b className="text-black">專業領域：</b>軟體工程實務、設計模式、專案管理、UI/UX 設計</li>
+          <li><b className="text-black">擅長語言與框架：</b>Flutter、Next.js、FastAPI、C/C++</li>
+          <li><b className="text-black">實習或工作經驗：</b>LINE、AIlicorn <i>（創業成員）</i>、中央衛保組網頁開發</li>
+          <li><b className="text-black">領導經驗：</b>課程平台開發團隊 TPM、必/選修課課程負責人、中央新生知訊網組長</li>
         </ul>
       </section>
 
@@ -246,6 +246,38 @@ export default function RootPage() {
 
       <section>
         <h3>讀書計畫與研究計畫</h3>
+        <p>
+          <>如今我已累積相當的實務經驗，而在理論方面，我希望能有更系統化、更深入的探索，包括但不限於系統設計、物件導向、</>
+          <>設計模式、單元測試等軟領域。而軟體工程為中央資工所之四大研究領域之一，我期待未來能有充分的課程與資源精進自我，</>
+          <>並針對以下主題進行研究：</>
+        </p>
+        <p>
+          <b className="text-black">深入探討軟體架構設計</b>
+        </p>
+        <ul>
+          <li>Clean Architecture 在大型專案中的應用與挑戰</li>
+          <li>微服務架構的設計與實踐</li>
+          <li>探討軟體架構的可演化性和可維護性</li>
+        </ul>
+        <p>
+          <b className="text-black">軟體測試與品質保證</b>
+        </p>
+        <ul>
+          <li>研究自動化測試方法和工具</li>
+          <li>探討如何提升軟體測試效率和覆蓋率</li>
+        </ul>
+        <p>
+          <b className="text-black">軟體開發方法與流程</b>
+        </p>
+        <ul>
+          <li>敏捷開發方法的應用與優化</li>
+          <li>DevOps 的實踐與挑戰</li>
+          <li>研究軟體開發流程的持續改進</li>
+        </ul>
+        <p>
+          <>如同前段所提及的，在資訊領域我必須持續學習、持續進步，以維持自己的競爭力。在碩士階段，我也將維持過去積極的學習態度，</>
+          <>努力學習與研究，成為一名優秀的軟體工程師，為軟體開發領域做出貢獻。</>
+        </p>
       </section>
 
       <h2 className="mt-10">附. 經歷審查證明</h2>

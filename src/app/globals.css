@@ -16,7 +16,7 @@ h3 {
 }
 
 ul {
-  @apply list-disc list-inside;
+  @apply list-disc list-inside mb-3 text-gray-600;
 }
 
 p {
