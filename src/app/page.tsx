@@ -252,7 +252,7 @@ export default function RootPage() {
         <h3>LINE TechFRESH 在職證明</h3>
         <Image
           className="w-full h-auto print:w-auto print:h-full print:object-contain"
-          src="/images/line_certificate.png"
+          src="/images/line-certificate.png"
           alt="LINE Certificate"
           width={595} height={841}
         />
