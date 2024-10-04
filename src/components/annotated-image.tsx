@@ -2,16 +2,18 @@ import AssetEntity from "@/module/asset/domain/assetEntity";
 import Image from "next/image";
 
 type Props = {
+  className?: string;
   image: AssetEntity;
   annotation: string;
 };
 
 export default function AnnotatedImage({
+  className,
   image,
   annotation,
 }: Props) {
   return (
-    <>
+    <div className={className}>
       <div className="flex flex-col items-center gap-2">
         <Image
           className="rounded-lg border-2"
@@ -21,6 +23,6 @@ export default function AnnotatedImage({
         />
         <p>{annotation}</p>
       </div>
-    </>
+    </div>
   );
 }

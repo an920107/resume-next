@@ -23,6 +23,11 @@ export default class Research {
         name: "Paint Screenshot",
     };
 
+    static readonly feature: AssetEntity = {
+        path: "/images/research-5.png",
+        name: "Features",
+    };
+
     static readonly blogBuilder: AssetEntity = {
         path: "/images/blog-1.png",
         name: "Blog Builder Screenshot",

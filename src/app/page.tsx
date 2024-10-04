@@ -29,23 +29,19 @@ export default function RootPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
           <AnnotatedImage
-            image={Research.pin}
-            annotation="聊天室訊息釘選"
-          />
-          <AnnotatedImage
             image={Research.timer}
             annotation="倒數計時器"
-          />
-          <AnnotatedImage
-            image={Research.draw}
-            annotation="會議室成員抽籤"
           />
           <AnnotatedImage
             image={Research.paint}
             annotation="同步繪圖廣播"
           />
         </div>
-
+        <AnnotatedImage
+          className="mb-3"
+          image={Research.feature}
+          annotation="聊天室指令功能規劃（節錄）"
+        />
         <div className="flex flex-col items-center gap-2">
           <Mermaid
             className="w-full flex flex-row justify-center p-2 rounded-lg border-2"
@@ -70,14 +66,20 @@ export default function RootPage() {
         </div>
       </section>
 
-      <section>
-        <h3>軟體測試專題——Blog Builder——無後端 Blog 自動部署服務</h3>
+      <section className="break-before-page">
+        <h3>軟體測試專題——GitHub Blog Builder——無後端部落格自動部署服務</h3>
         <ul>
           <li><b className="text-black">指導教授：</b>陽明交通大學資訊工程學系 黃世昆教授</li>
           <li><b className="text-black">課程名稱：</b>軟體測試</li>
+          <li><b className="text-black">修課期間：</b>112 學年度下學期（大三）</li>
         </ul>
         <p>
-          <>說明待補</>
+          <>傳統部落格必須要有前後端才能對文章進行操作，而 </>
+          <Link href="https://github.com/GithubBlogBuilder">GitHub Blog Builder</Link>
+          <> 則能透過 GitHub Issue 作為文章存儲的媒介、以 GitHub Pages 展示前端介面，讓任何使用者不需自行 host 伺服器，</>
+          <>就能擁有自己的部落格。在五人團隊中，我負責的是以 Next.js 進行前端 Blog Template 開發，以及 Template Repo 的</>
+          <>自動化部署腳本撰寫。而作為軟體測試專案，我們使用 cypress 進行 API 測試與完整的 end-to-end 測試，並使用 Clean </>
+          <>Architecture 切分程式邏輯，提高程式的可測試性。</>
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
           <AnnotatedImage
@@ -99,14 +101,19 @@ export default function RootPage() {
         </div>
       </section>
 
-      <section>
+      <section className="break-before-page">
         <h3>計概專題——Hot Trader——加密貨幣跟單視覺化</h3>
         <ul>
           <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 施國琛教授</li>
           <li><b className="text-black">課程名稱：</b>計算機概論</li>
+          <li><b className="text-black">修課期間：</b>110 學年度下學期（大一）</li>
         </ul>
         <p>
-          <>說明待補</>
+          <>修課期間正值加密貨幣浪潮，對於各大交易平台上跟單交易的數據，我們四人希望能將歷史交易紀錄與幣價整合，繪製成更直觀的圖表。</>
+          <Link href="https://github.com/an920107/HotTrader">Hot Trader</Link>
+          <> 與其他組別最大的差異為，我們除了以 JavaFX 開發前端交互介面外，亦整合其他語言並後端伺服器完成更複雜的功能。</>
+          <>我在專案中負責處理後端伺服器的架設，以課程學到的 Socket 作為前後端資料傳輸的介面，並將交易所爬蟲獲取的資料儲存在</>
+          <>MySQL 資料庫中。</>
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
           <AnnotatedImage
@@ -124,35 +131,18 @@ export default function RootPage() {
         </div>
       </section>
 
-      <section>
-        <h3>計概專題——Remake: Tetris</h3>
-        <ul>
-          <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 施國琛教授</li>
-          <li><b className="text-black">課程名稱：</b>計算機概論</li>
-        </ul>
-        <p>
-          <>說明待補</>
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
-          <AnnotatedImage
-            image={Research.tetrisGaming}
-            annotation="遊戲畫面（方塊皆為動態生成）"
-          />
-          <AnnotatedImage
-            image={Research.tetrisLeaderboard}
-            annotation="線上排行榜"
-          />
-        </div>
-      </section>
-
-      <section>
+      <section className="break-before-page">
         <h3>組合語言專題——うらら迷路帖——隨機迷宮終端機遊戲</h3>
         <ul>
           <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 梁德容教授、鄭旭詠教授</li>
           <li><b className="text-black">課程名稱：</b>組合語言</li>
+          <li><b className="text-black">修課期間：</b>111 學年度上學期（大二）</li>
         </ul>
         <p>
-          <>說明待補</>
+          <Link href="https://github.com/an920107/UraraMeirochou">うらら迷路帖 (Urara Meirochou)</Link>
+          <> 以 DSU 演算法隨機生成合法的迷宮地圖，透過組合語言讓使用者在終端機上進行操作。我在四人團隊中負責勝利判斷、地圖讀檔，</>
+          <>與障礙物繪製，並將其他功能的程式碼整合在一起，而以組合語言這樣的低階語言來說，是個相當大的挑戰，不過也在這個過程中，</>
+          <>相當程度的訓練了我 code review 與團隊溝通上的能力。</>
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
           <AnnotatedImage
@@ -162,6 +152,31 @@ export default function RootPage() {
           <AnnotatedImage
             image={Research.asmDetail}
             annotation="專案架構"
+          />
+        </div>
+      </section>
+
+      <section className="">
+        <h3>計概專題——Remake: Tetris</h3>
+        <ul>
+          <li><b className="text-black">指導教授：</b>中央大學資訊工程學系 施國琛教授</li>
+          <li><b className="text-black">課程名稱：</b>計算機概論</li>
+          <li><b className="text-black">修課期間：</b>110 學年度下學期（大一）</li>
+        </ul>
+        <p>
+          <>計算機概論下學期課程著重在 OOP 的概念與實踐，而我認為遊戲開發正是一個能充分體現 OOP 的形式。對於每個遊戲物件而言，</>
+          <>都有其屬性與方法，且不同物件間相似、重複或從屬的關係，也正好與 OOP 的實作方法相似。我透過個人以 JavaFX 復刻經典遊戲 </>
+          <Link href="https://github.com/squidspirit/Tetris">Tetris</Link>
+          <>，來練習 OOP 實務。</>
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+          <AnnotatedImage
+            image={Research.tetrisGaming}
+            annotation="遊戲畫面（方塊皆為動態生成）"
+          />
+          <AnnotatedImage
+            image={Research.tetrisLeaderboard}
+            annotation="線上排行榜"
           />
         </div>
       </section>
