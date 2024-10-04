@@ -9,7 +9,7 @@ export default class Certificates {
     };
 
     static readonly ailicorn: AssetEntity = {
-        path: "/images/ailicorn.svg",
+        path: "/images/ailicorn.png",
         name: "AIlicorn Certificate",
     };
 
