@@ -29,18 +29,18 @@ export default function RootPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
           <AnnotatedImage
-            image={Research.timer}
+            image={Research.parasiteTimer}
             annotation="倒數計時器"
           />
           <AnnotatedImage
-            image={Research.paint}
+            image={Research.parasitePaint}
             annotation="同步繪圖廣播"
           />
         </div>
         <AnnotatedImage
           className="mb-3"
-          image={Research.feature}
-          annotation="聊天室指令功能規劃（節錄）"
+          image={Research.parasiteCommand}
+          annotation="指令系統架構"
         />
         <div className="flex flex-col items-center gap-2">
           <Mermaid

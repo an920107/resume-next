@@ -3,29 +3,19 @@ import AssetEntity from "../domain/assetEntity";
 export default class Research {
     private constructor() { }
 
-    static readonly pin: AssetEntity = {
-        path: "/images/research-1.png",
-        name: "Pin Screenshot",
-    };
-
-    static readonly timer: AssetEntity = {
-        path: "/images/research-2.png",
+    static readonly parasiteTimer: AssetEntity = {
+        path: "/images/parasite-1.png",
         name: "Timer Screenshot",
     };
 
-    static readonly draw: AssetEntity = {
-        path: "/images/research-3.png",
-        name: "Draw Screenshot",
-    };
-
-    static readonly paint: AssetEntity = {
-        path: "/images/research-4.png",
+    static readonly parasitePaint: AssetEntity = {
+        path: "/images/parasite-2.png",
         name: "Paint Screenshot",
     };
 
-    static readonly feature: AssetEntity = {
-        path: "/images/research-5.png",
-        name: "Features",
+    static readonly parasiteCommand: AssetEntity = {
+        path: "/images/parasite-3.png",
+        name: "Command System",
     };
 
     static readonly blogBuilder: AssetEntity = {
