@@ -8,14 +8,10 @@ import Certificates from "@/module/asset/presenter/certificates";
 import Icons from "@/module/asset/presenter/icons";
 import Research from "@/module/asset/presenter/research";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function RootPage() {
   const [applyCollage, setApplyCollage] = useState<Collage>(Collage.NCU);
-
-  useEffect(() => {
-    console.log("Apply collage:", applyCollage);
-  }, [applyCollage]);
 
   return (
     <>
@@ -430,7 +426,7 @@ export default function RootPage() {
         <select
           name="collage" id="collage"
           className="mb-6 rounded-md px-2 py-0.5 print:hidden"
-          onChange={(e) => setApplyCollage(e.target.value as any as Collage)}
+          onChange={(e) => setApplyCollage(e.target.value as unknown as Collage)}
         >
           <option value={Collage.NCU}>中央大學 資訊工程學系</option>
           <option value={Collage.NYCU_C}>交通大學 資訊工程學系 丙組</option>
@@ -441,24 +437,27 @@ export default function RootPage() {
           applyCollage === Collage.NCU &&
           <p>
             <>如今我已累積相當的實務經驗，而在理論方面，我希望能有更系統化、更深入的探索，包括但不限於系統設計、物件導向、</>
-            <>設計模式、單元測試等領域。而軟體工程為中央資工所之四大研究領域之一，我期待未來能有充分的課程與資源精進自我，</>
+            <>設計模式、單元測試等項目。而軟體工程為中央資工所之四大研究領域之一，我期待未來能有充分的課程與資源精進自我，</>
             <>並針對以下主題進行研究：</>
           </p>
         }
         {
           applyCollage === Collage.NYCU_C &&
           <p>
-            <>我對交通大學資訊工程學系的軟體工程研究領域有著濃厚的興趣，而我期待能在交通大學的環境中，有更多的學習機會，</>
-            <>並針對以下主題進行研究：</>
+            <>如今我已累積相當的實務經驗，而在理論方面，我希望能有更系統化、更深入的探索，包括但不限於系統設計、物件導向、</>
+            <>設計模式、單元測試等項目。而軟體工程為陽明交大資工所的研究領域之一，我期待未來能有充分的課程與資源精進自我，</>
+            <>同時以自身豐富的實作經驗為基礎，針對以下主題進行研究：</>
           </p>
         }
         {
           applyCollage === Collage.NYCU_E &&
           <p>
-            <>我對交通大學電機工程學系的軟體工程研究領域有著濃厚的興趣，而我期待能在交通大學的環境中，有更多的學習機會，</>
-            <>並針對以下主題進行研究：</>
+            <>如今我已累積相當的實務經驗，而對於更大規模的系統與專案，我希望能藉由進入陽明交通大學戊組，參與校務資訊系統</>
+            <>開發，結合並善用自身豐富的實作經驗，在系統設計、物件導向、設計模式、單元測試等領域上，有更深程度的理解。</>
+            <>在改善校務資訊系統的同時，我也將針對以下主題進行探究：</>
           </p>
         }
+
         <p>
           <b className="text-black">深入探討軟體架構設計</b>
         </p>
@@ -482,11 +481,12 @@ export default function RootPage() {
           <li>DevOps 的實踐與挑戰</li>
           <li>研究軟體開發流程的持續改進</li>
         </ul>
+
         <p>
           <>如同前段所提及的，在資訊領域我必須持續學習、持續進步，以維持自己的競爭力。在碩士階段，我也將維持過去積極的學習態度，</>
           <>努力學習與研究，成為一名優秀的軟體工程師，為軟體開發領域做出貢獻。</>
         </p>
-      </section>
+      </section >
 
       <h2 className="mt-10">附. 經歷審查證明</h2>
 
