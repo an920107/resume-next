@@ -429,8 +429,8 @@ export default function RootPage() {
           onChange={(e) => setApplyCollage(e.target.value as unknown as Collage)}
         >
           <option value={Collage.NCU}>中央大學 資訊工程學系</option>
-          <option value={Collage.NYCU_C}>交通大學 資訊工程學系 丙組</option>
-          <option value={Collage.NYCU_E}>交通大學 資訊工程學系 戊組</option>
+          <option value={Collage.NYCU_C}>陽明交通大學 資訊工程學系 丙組</option>
+          <option value={Collage.NYCU_E}>陽明交通大學 資訊工程學系 戊組</option>
         </select>
 
         {
